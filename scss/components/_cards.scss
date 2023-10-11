@@ -1,0 +1,45 @@
+/*Estilos de las cards de discografia*/
+
+.container-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    }
+
+    .cards {
+    width: 200px;
+    border: 1px solid black;
+    color: #000;
+    margin: 15px;
+
+    img {
+    width: 200px;
+    height: 200px;
+    }
+
+    h2 {
+    color: black;
+    font-size: 15px;
+    }
+    }
+
+  /* Media queries para hacer responsive */
+    @media (max-width: 768px) {
+    .container-class {
+    flex-direction: column;
+    }
+
+    .cards {
+    width: 50%; /* Cards ocuparán todo el ancho disponible */
+    margin: 15px 0; /* Espaciado superior e inferior en lugar de izquierda y derecha */
+    }
+
+    .cards img {
+    width: 50%; /* Imágenes ocuparán todo el ancho de la tarjeta */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    }
+    }
+
+  /* Otras media queries para tamaños de pantalla específicos si es necesario */

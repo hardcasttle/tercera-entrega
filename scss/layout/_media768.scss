@@ -1,0 +1,55 @@
+/*@media responsive | Inicio*/ 
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+
+        .nav-item {
+            margin: 10px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .imagen {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen img {
+        width: 200px;
+    }
+}
+
+/*@media responsive | Contactos*/
+@media (max-width: 768px) {
+    .contacto-integ{
+    grid-template-columns: 1fr;
+    }
+}
+
+/*@media responsive | Discografia*/
+@media (max-width: 768px) {
+    .container-class {
+    flex-direction: column;
+    }
+
+    .cards {
+    width: 100%;
+    margin: 15px 0;
+    }
+
+    .cards img {
+    width: 50%;
+    height: auto;
+    }
+    }

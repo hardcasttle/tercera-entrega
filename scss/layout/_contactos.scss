@@ -1,0 +1,22 @@
+.contacto-integ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    }
+
+    .caja {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+
+    h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    }
+
+    p {
+    font-size: 1rem;
+    }
+
+}

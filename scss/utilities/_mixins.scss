@@ -1,0 +1,60 @@
+@mixin estilos-header {
+    margin: auto;
+    align-items: center;
+
+    div {
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin: auto 0;
+
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            font-family: 'Jomhuria', cursive;
+            color: black;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+
+        .nav-item {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+@mixin estilos-titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jomhuria', cursive;
+    font-size: 80px;
+    color: $color-titulo;
+
+    h1, h2 {
+        margin: 0;
+        color: $color-titulo;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+

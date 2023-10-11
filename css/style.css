@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*Se suele poner los estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #F3EFE0; }
+
+/*Codigo del header de la pagina principal*/
+.headerIndex {
+  margin: auto;
+  align-items: center; }
+  .headerIndex div {
+    justify-content: space-between; }
+  .headerIndex .navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto 0; }
+    .headerIndex .navbar a {
+      text-decoration: none;
+      font-size: 30px;
+      font-family: 'Jomhuria', cursive;
+      color: black; }
+  .headerIndex .nav-list {
+    display: flex;
+    list-style: none; }
+    .headerIndex .nav-list .nav-item {
+      margin-right: 10px; }
+
+/*Codigo de todos los titulos de la pagina.*/
+.titulos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jomhuria', cursive;
+  font-size: 80px;
+  color: black; }
+  .titulos h1, .titulos h2 {
+    margin: 0;
+    color: black; }
+  .titulos a {
+    text-decoration: none; }
+
+/*Codigo de las 3 imagenes de pagina principal*/
+.imagen, .otro-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imagen img, .otro-selector img {
+    width: 250px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 30px; }
+
+.otro-selector {
+  /* Aca pondria un @extend de otro contenedo */ }
+
+/*Estilos de las cards de discografia*/
+.container-class {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+
+.cards {
+  width: 200px;
+  border: 1px solid black;
+  color: #000;
+  margin: 15px; }
+  .cards img {
+    width: 200px;
+    height: 200px; }
+  .cards h2 {
+    color: black;
+    font-size: 15px; }
+
+/* Media queries para hacer responsive */
+@media (max-width: 768px) {
+  .container-class {
+    flex-direction: column; }
+  .cards {
+    width: 50%;
+    /* Cards ocuparán todo el ancho disponible */
+    margin: 15px 0;
+    /* Espaciado superior e inferior en lugar de izquierda y derecha */ }
+  .cards img {
+    width: 50%;
+    /* Imágenes ocuparán todo el ancho de la tarjeta */
+    height: auto;
+    /* Altura automática para mantener la relación de aspecto */ } }
+
+/* Otras media queries para tamaños de pantalla específicos si es necesario */
+.intro {
+  color: #000;
+  text-align: center;
+  margin: 50px;
+  font-size: 20px; }
+
+.contacto-integ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+
+.caja {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center; }
+  .caja h3 {
+    font-size: 1.5rem;
+    margin: 0; }
+  .caja p {
+    font-size: 1rem; }
+
+.contenedor, .otro-selector {
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.otro-selector {
+  /* Aca pondria un @extend de otro contenedor */ }
+
+.objetivo-cumplido {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.p-gira {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  color: black; }
+
+/*@media responsive | Inicio*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+    .navbar a {
+      font-size: 20px; }
+  .nav-list {
+    flex-direction: column;
+    align-items: center; }
+    .nav-list .nav-item {
+      margin: 10px 0; } }
+
+@media (max-width: 768px) {
+  .imagen, .otro-selector {
+    flex-direction: column;
+    text-align: center; }
+  .imagen img, .otro-selector img {
+    width: 200px; } }
+
+/*@media responsive | Contactos*/
+@media (max-width: 768px) {
+  .contacto-integ {
+    grid-template-columns: 1fr; } }
+
+/*@media responsive | Discografia*/
+@media (max-width: 768px) {
+  .container-class {
+    flex-direction: column; }
+  .cards {
+    width: 100%;
+    margin: 15px 0; }
+  .cards img {
+    width: 50%;
+    height: auto; } }

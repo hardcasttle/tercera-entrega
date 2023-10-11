@@ -1,0 +1,18 @@
+/*Codigo de las 3 imagenes de pagina principal*/
+.imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+        width: 250px;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 30px;
+        }
+        }
+        .otro-selector {
+        @extend .imagen;
+        /* Aca pondria un @extend de otro contenedo */
+}
+
